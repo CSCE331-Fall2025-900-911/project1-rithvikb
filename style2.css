@@ -23,7 +23,6 @@ body {
     background-color: var(--base-color);
 }
 
-/* Left vertical sidebar layout */
 body {
     margin-left: 280px;
 }
@@ -93,7 +92,6 @@ nav a:hover {
     color: #000;
 }
 
-/* Card layouts for qualifications, portfolio, and service pages */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -184,7 +182,6 @@ nav a:hover {
     color: var(--text--color);
 }
 
-/* Ensure ULs used as card descriptions are styled consistently */
 ul.card-description, .card-description ul {
     margin: 0;
     padding-left: 1.2em;
@@ -236,14 +233,12 @@ ul.card-description, .card-description ul {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
 }
 
-/* Place the theme toggle at the bottom of the sidebar */
 .theme-toggle-nav {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
 }
 
-/* Responsive: revert to top navbar on small screens */
 @media (max-width: 800px) {
     body { margin-left: 0; }
     .navbar-container {
@@ -286,12 +281,10 @@ section {
     min-height: auto;
 }
 
-/* App pages content spacing */
 .app-content {
     margin-top: 2em;
 }
 
-/* Center justify headers and text on app pages */
 .app-content .text-container {
     text-align: center;
 }
@@ -304,7 +297,6 @@ section {
     text-align: center;
 }
 
-/* Title card styling for page headers */
 .title-card {
     margin: 2em auto;
     width: min(75em, 100%);
@@ -320,7 +312,6 @@ section {
     padding-bottom: 0;
 }
 
-/* Contact Section Styling */
 .contact-section {
     margin: 2em auto;
     width: min(75em, 100%);
@@ -490,7 +481,6 @@ h1 {
     background-color: #5a3f7a;
 }
 
-/* Theme Toggle in Navbar */
 .theme-toggle-nav {
     margin-left: auto;
     padding: 0.5em 1em;

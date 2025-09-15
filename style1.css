@@ -76,7 +76,6 @@ nav a:hover {
     color: white;
 }
 
-/* Card layouts for qualifications, portfolio, and service pages */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -239,12 +238,10 @@ section {
     min-height: auto;
 }
 
-/* App pages content spacing */
 .app-content {
     margin-top: 2em;
 }
 
-/* Center justify headers and text on app pages */
 .app-content .text-container {
     text-align: center;
 }
@@ -257,7 +254,6 @@ section {
     text-align: center;
 }
 
-/* Title card styling for page headers */
 .title-card {
     margin: 2em auto;
     width: min(75em, 100%);
@@ -273,7 +269,6 @@ section {
     padding-bottom: 0;
 }
 
-/* Contact Section Styling */
 .contact-section {
     margin: 2em auto;
     width: min(75em, 100%);

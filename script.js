@@ -1,42 +1,27 @@
-// Theme initialization function
 function initializeTheme() {
-    // Check if we're on the genai page - if so, don't apply theme switching
-    if (window.location.pathname.includes('genai.html')) {
-        return;
-    }
+    if (window.location.pathname.includes('genai.html')) return;
     
     const stylesheet = document.getElementById('main-stylesheet');
     const toggle = document.getElementById('theme-toggle');
     const savedTheme = sessionStorage.getItem('theme') || 'style1';
     
-    if (savedTheme === 'style2') {
-        stylesheet.href = 'style2.css';
-        if (toggle) toggle.classList.add('active');
-    } else {
-        stylesheet.href = 'style1.css';
-        if (toggle) toggle.classList.remove('active');
-    }
+    if (savedTheme === 'style2') stylesheet.href = 'style2.css';
+    else stylesheet.href = 'style1.css';
 }
 
-
-// Theme toggle functionality
 function toggleTheme() {
     const stylesheet = document.getElementById('main-stylesheet');
     const toggle = document.getElementById('theme-toggle');
     const currentTheme = sessionStorage.getItem('theme') || 'style1';
     
-    if (currentTheme === 'style1') {
-        // Switch to style2
+    if(currentTheme === 'style1') {
         stylesheet.href = 'style2.css';
-        toggle.classList.add('active');
         sessionStorage.setItem('theme', 'style2');
-    } else {
-        // Switch to style1
+    } 
+    else {
         stylesheet.href = 'style1.css';
-        toggle.classList.remove('active');
         sessionStorage.setItem('theme', 'style1');
     }
 }
 
-// Initialize theme when page loads
 document.addEventListener('DOMContentLoaded', initializeTheme);
