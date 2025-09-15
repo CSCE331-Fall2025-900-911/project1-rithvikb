@@ -106,9 +106,35 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 80px;
-    background: var(--base-color);
+    background: transparent;
     border-radius: 0.5em;
     margin-bottom: 1em;
+}
+
+.card-image img {
+    max-height: 60px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 0.5em;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.card-logo {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 0.5em;
 }
 
 .logo-placeholder {
@@ -131,7 +157,7 @@ nav a:hover {
 
 .card-details {
     font-size: 0.9rem;
-    color: var(--secondary-color);
+    color: var(--text--color);
     margin-bottom: 1em;
     font-style: italic;
 }
@@ -139,6 +165,16 @@ nav a:hover {
 .card-description {
     line-height: 1.6;
     color: var(--text--color);
+}
+
+ul.card-description, .card-description ul {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style-type: disc;
+}
+
+.card-description li {
+    margin-bottom: 0.5em;
 }
 
 .card-links {
@@ -298,7 +334,7 @@ section {
 }
 
 .contact-details a {
-    color: var(--primary-color);
+    color: var(--text--color);
     text-decoration: none;
     transition: color 0.3s ease;
 }

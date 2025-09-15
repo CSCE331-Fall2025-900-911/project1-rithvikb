@@ -23,14 +23,26 @@ body {
     background-color: var(--base-color);
 }
 
+/* Left vertical sidebar layout */
+body {
+    margin-left: 280px;
+}
+
 .navbar-container {
+    position: fixed;
+    top: 2em;
+    bottom: 2em;
+    left: 0;
+    height: auto;
+    width: 240px;
+    margin: 1em 1em;
+    padding: 1.5em;
     background-color: var(--secondary-color);
-    border-radius: 1em;
-    margin: 1em auto;
-    width: min(75em, 100%);
-    padding: 1em;
     border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    z-index: 1000;
 }
 
 nav {
@@ -40,14 +52,18 @@ nav {
 
 nav ul {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     list-style-type: none;
-    gap: 1em;
+    gap: 0.5em;
+    height: 100%;
 }
 
 nav li:first-child {
-    margin-right: auto;
+    margin-bottom: 10em;
 }
+
+nav li:first-child { margin-right: 0; }
 
 nav li:first-child a {
     font-weight: bold;
@@ -62,6 +78,7 @@ nav a {
     border: 1px solid transparent;
     transition: all 0.3s ease;
     font-weight: 500;
+    width: 100%;
 }
 
 nav a:hover {
@@ -106,9 +123,35 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 80px;
-    background: var(--base-color);
+    background: transparent;
     border-radius: 0.5em;
     margin-bottom: 1em;
+}
+
+.card-image img {
+    max-height: 64px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 0.5em;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.card-logo {
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 0.5em;
 }
 
 .logo-placeholder {
@@ -139,6 +182,17 @@ nav a:hover {
 .card-description {
     line-height: 1.6;
     color: var(--text--color);
+}
+
+/* Ensure ULs used as card descriptions are styled consistently */
+ul.card-description, .card-description ul {
+    margin: 0;
+    padding-left: 1.2em;
+    list-style-type: disc;
+}
+
+.card-description li {
+    margin-bottom: 0.5em;
 }
 
 .card-links {
@@ -180,6 +234,35 @@ nav a:hover {
     border-color: var(--secondary-color);
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
+}
+
+/* Place the theme toggle at the bottom of the sidebar */
+.theme-toggle-nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+/* Responsive: revert to top navbar on small screens */
+@media (max-width: 800px) {
+    body { margin-left: 0; }
+    .navbar-container {
+        position: static;
+        height: auto;
+        width: auto;
+        border-radius: 1em;
+        margin: 1em auto;
+    }
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        height: auto;
+    }
+    .theme-toggle-nav {
+        margin-left: auto;
+        margin-top: 0;
+    }
 }
 
 header {
@@ -298,7 +381,7 @@ section {
 }
 
 .contact-details a {
-    color: var(--primary-color);
+    color: var(--text--color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -321,7 +404,7 @@ section {
 header img {
     height: 400px;
     max-width: 100%;
-    border-radius: 50%;
+    border-radius: 1em;
     object-fit: cover;
     object-position: bottom;
     border: 3px solid var(--primary-color);
