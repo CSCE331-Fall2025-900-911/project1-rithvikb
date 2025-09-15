@@ -7,7 +7,7 @@ function initializeTheme() {
     
     const stylesheet = document.getElementById('main-stylesheet');
     const toggle = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme') || 'style1';
+    const savedTheme = sessionStorage.getItem('theme') || 'style1';
     
     if (savedTheme === 'style2') {
         stylesheet.href = 'style2.css';
@@ -23,18 +23,18 @@ function initializeTheme() {
 function toggleTheme() {
     const stylesheet = document.getElementById('main-stylesheet');
     const toggle = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'style1';
+    const currentTheme = sessionStorage.getItem('theme') || 'style1';
     
     if (currentTheme === 'style1') {
         // Switch to style2
         stylesheet.href = 'style2.css';
         toggle.classList.add('active');
-        localStorage.setItem('theme', 'style2');
+        sessionStorage.setItem('theme', 'style2');
     } else {
         // Switch to style1
         stylesheet.href = 'style1.css';
         toggle.classList.remove('active');
-        localStorage.setItem('theme', 'style1');
+        sessionStorage.setItem('theme', 'style1');
     }
 }
 
