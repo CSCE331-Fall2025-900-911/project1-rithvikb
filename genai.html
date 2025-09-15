@@ -363,6 +363,96 @@
             font-weight: 500;
         }
 
+        /* Prompt Section */
+        .ai-prompt {
+            padding: 6rem 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            margin: 4rem 0;
+        }
+
+        .ai-prompt-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .ai-prompt-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 4rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .ai-prompt-content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ai-prompt-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-prompt-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .ai-prompt-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .ai-prompt-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .ai-prompt-subtitle {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .ai-prompt-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
+        .ai-prompt-text p {
+            margin-bottom: 1rem;
+        }
+
+        .ai-prompt-text ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .ai-prompt-text li {
+            margin-bottom: 0.5rem;
+        }
+
+        .ai-prompt-text strong {
+            color: #4ecdc4;
+        }
+
         /* Footer */
         .ai-footer {
             padding: 4rem 2rem 2rem;
@@ -423,7 +513,8 @@
 
             .ai-features,
             .ai-process,
-            .ai-stats {
+            .ai-stats,
+            .ai-prompt {
                 padding: 4rem 1rem;
             }
 
@@ -550,6 +641,21 @@
                 <div class="ai-stat-item">
                     <div class="ai-stat-number">24/7</div>
                     <div class="ai-stat-label">Availability</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prompt Section -->
+        <section class="ai-prompt">
+            <div class="ai-prompt-container">
+                <h2 class="ai-prompt-title">The Prompt Behind This Page</h2>
+                <div class="ai-prompt-content">
+                    <div class="ai-prompt-card">
+                        <h3 class="ai-prompt-subtitle">Original Prompt</h3>
+                        <div class="ai-prompt-text">
+                            <p>"Create a modern, futuristic AI-themed landing page with a dark theme. The content of this page should include how AI works, how it can be used to create websites like this one, the statistics regarding AI development, and finally a placeholder for a section called "Prompt" where I can paste this current prompt that was used to generate the website. Make sure to keep the development in plain HTML, CSS, and JavaScript, but push these languages to their limits to create a very responsive, interactive, and professional webpage with many varying styles and designs to demonstrate the power of AI in web development."</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

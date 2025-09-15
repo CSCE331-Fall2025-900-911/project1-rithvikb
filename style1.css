@@ -3,7 +3,7 @@
     --primary-color: rgb(0, 90, 150);
     --secondary-color: rgb(170, 170, 170);
     --tertiary-color: rgb(0, 60, 120);
-    --text--color: rgb(0,0,0);
+    --text-color: rgb(0,0,0);
 }
 
 
@@ -15,7 +15,7 @@
 
 html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--text--color);
+    color: var(--text-color);
 }
 
 body {
@@ -28,9 +28,8 @@ body {
     border-radius: 1em;
     margin: 1em auto;
     width: min(75em, 100%);
-    padding: 1em;
+    padding: 2em;
     border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -56,7 +55,6 @@ nav li:first-child a {
 nav a {
     text-decoration: none;
     color: var(--text-color);
-    display: block;
     padding: 1em;
     border-radius: 0.5em;
     border: 1px solid transparent;
@@ -105,7 +103,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     height: 80px;
-    background: transparent;
     border-radius: 0.5em;
     margin-bottom: 1em;
 }
@@ -113,10 +110,7 @@ nav a:hover {
 .card-image img {
     max-height: 60px;
     max-width: 100%;
-    width: auto;
-    height: auto;
     object-fit: contain;
-    display: block;
     border-radius: 0.5em;
 }
 
@@ -129,10 +123,7 @@ nav a:hover {
 
 .card-logo {
     max-height: 80px;
-    width: auto;
-    height: auto;
     object-fit: contain;
-    background: transparent;
     border-radius: 0.5em;
 }
 
@@ -145,7 +136,7 @@ nav a:hover {
 .card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
-    color: var(--text--color);
+    color: var(--text-color);
 }
 
 .card-subtitle {
@@ -156,14 +147,14 @@ nav a:hover {
 
 .card-details {
     font-size: 0.9rem;
-    color: var(--text--color);
+    color: var(--text-color);
     margin-bottom: 1em;
     font-style: italic;
 }
 
 .card-description {
     line-height: 1.6;
-    color: var(--text--color);
+    color: var(--text-color);
 }
 
 ul.card-description, .card-description ul {
@@ -198,18 +189,6 @@ ul.card-description, .card-description ul {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .nav-active:hover {
     background-color: var(--tertiary-color);
     border-color: var(--secondary-color);
@@ -235,7 +214,6 @@ section {
     border-radius: 1em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: auto;
 }
 
 .app-content {
@@ -254,20 +232,6 @@ section {
     text-align: center;
 }
 
-.title-card {
-    margin: 2em auto;
-    width: min(75em, 100%);
-    background-color: var(--secondary-color);
-    padding: 2em;
-    border-radius: 1em;
-    border: 2px solid var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.title-card .flex-container {
-    min-height: auto;
-    padding-bottom: 0;
-}
 
 .contact-section {
     margin: 2em auto;
@@ -277,7 +241,6 @@ section {
     border-radius: 1em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    min-height: auto;
 }
 
 .contact-section h2 {
@@ -324,12 +287,12 @@ section {
 
 .contact-details p {
     margin: 0;
-    color: var(--text--color);
+    color: var(--text-color);
     font-size: 1rem;
 }
 
 .contact-details a {
-    color: var(--text--color);
+    color: var(--text-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -345,7 +308,6 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 3em;
-    min-height: auto;
     padding: 0;
 }
 
@@ -397,17 +359,6 @@ h1 {
     min-width: 120px;
 }
 
-.index-btns::before {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-}
-
-.index-btns:hover::before {
-    left: 100%;
-}
 
 .index-btns:hover {
     transform: scale(1.05);
@@ -456,5 +407,5 @@ h1 {
 .theme-toggle-label {
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--text--color);
+    color: var(--text-color);
 }
