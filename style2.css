@@ -109,7 +109,7 @@ nav a:hover {
 }
 
 .qual-card:hover, .project-card:hover, .service-card:hover {
-    transform: translateY(-4px) scale(1.02);
+    transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -143,11 +143,6 @@ nav a:hover {
     border-radius: 0.5em;
 }
 
-.logo-placeholder {
-    font-size: 2rem;
-    color: var(--primary-color);
-    font-weight: bold;
-}
 
 .card-content h3 {
     font-size: 1.5rem;
@@ -183,32 +178,11 @@ ul.card-description, .card-description ul {
     margin-bottom: 0.5em;
 }
 
-.card-links {
-    display: flex;
-    gap: 1em;
-    margin-top: 1em;
-}
 
-.project-link {
-    text-decoration: none;
-    color: #000;
-    padding: 0.5em 1em;
-    border-radius: 0.5em;
-    background-color: var(--primary-color);
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.project-link:hover {
-    background-color: var(--tertiary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
 
 .nav-active:hover {
     background-color: var(--tertiary-color);
     border-color: var(--secondary-color);
-    transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
 }
 
@@ -290,7 +264,7 @@ section {
 }
 
 .contact-item:hover {
-    transform: translateY(-2px);
+    scale: 1.05;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     border-color: var(--tertiary-color);
 }
@@ -381,17 +355,6 @@ h1 {
     min-width: 120px;
 }
 
-.index-btns::before {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-}
-
-.index-btns:hover::before {
-    left: 100%;
-}
 
 .index-btns:hover {
     transform: scale(1.05);
