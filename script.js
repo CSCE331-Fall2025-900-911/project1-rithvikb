@@ -1,8 +1,7 @@
-function initializeTheme() {
+function loadTheme() {
     if (window.location.pathname.includes('genai.html')) return;
     
     const stylesheet = document.getElementById('main-stylesheet');
-    const toggle = document.getElementById('theme-toggle');
     const savedTheme = sessionStorage.getItem('theme') || 'style1';
     
     if (savedTheme === 'style2') stylesheet.href = 'style2.css';
@@ -11,7 +10,6 @@ function initializeTheme() {
 
 function toggleTheme() {
     const stylesheet = document.getElementById('main-stylesheet');
-    const toggle = document.getElementById('theme-toggle');
     const currentTheme = sessionStorage.getItem('theme') || 'style1';
     
     if(currentTheme === 'style1') {
@@ -24,4 +22,4 @@ function toggleTheme() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', initializeTheme);
+document.addEventListener('DOMContentLoaded', loadTheme());
