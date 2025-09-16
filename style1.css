@@ -253,6 +253,11 @@ section {
     text-align: center;
 }
 
+.contact-item .contact-icon img {
+    width: 24px;
+    height: 24px;
+}
+
 .contact-details h3 {
     margin: 0 0 0.5em 0;
     color: var(--primary-color);
