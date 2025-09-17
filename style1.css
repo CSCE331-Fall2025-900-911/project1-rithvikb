@@ -6,7 +6,6 @@
     --text-color: rgb(0,0,0);
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -158,8 +157,6 @@ ul.card-description, .card-description ul {
 .card-description li {
     margin-bottom: 0.5em;
 }
-
-
 
 .nav-active:hover {
     background-color: var(--tertiary-color);
