@@ -109,7 +109,6 @@ nav a:hover {
 }
 
 .qual-card:hover, .project-card:hover, .service-card:hover {
-    transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -269,6 +268,11 @@ section {
     border-color: var(--tertiary-color);
 }
 
+a.contact-item {
+    text-decoration: none;
+    color: inherit;
+}
+
 .contact-item .contact-icon {
     font-size: 2rem;
     min-width: 60px;
@@ -358,6 +362,20 @@ h1 {
     display: inline-block;
     text-align: center;
     min-width: 120px;
+    background-color: var(--primary-color);
+}
+
+.project-card .index-btns {
+    margin-top: 1.5em;
+    background-color: var(--primary-color);
+}
+
+#education-btn {
+    margin-top: 2em;
+}
+
+#band-camp-btn {
+    margin-top: 1.5em;
 }
 
 
