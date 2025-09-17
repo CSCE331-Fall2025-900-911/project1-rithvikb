@@ -203,8 +203,6 @@ ul.card-description, .card-description ul {
     margin-bottom: 0.5em;
 }
 
-
-
 .nav-active:hover {
     background-color: var(--tertiary-color);
     border-color: var(--secondary-color);
@@ -246,7 +244,6 @@ section {
 .app-content p {
     text-align: center;
 }
-
 
 .contact-section {
     margin: 2em auto;
@@ -396,7 +393,6 @@ h1 {
 #band-camp-btn {
     margin-top: 1.5em;
 }
-
 
 .index-btns:hover {
     transform: scale(1.05);
