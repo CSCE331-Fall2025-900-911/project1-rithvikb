@@ -211,12 +211,6 @@ ul.card-description, .card-description ul {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 20px var(--primary-color);
 }
 
-.theme-toggle-nav {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-}
-
 header {
     margin: 2em auto;
     width: min(75em, 100%);
@@ -393,7 +387,6 @@ h1 {
 
 .project-card .index-btns {
     margin-top: 1.5em;
-    background-color: var(--primary-color);
 }
 
 #education-btn {

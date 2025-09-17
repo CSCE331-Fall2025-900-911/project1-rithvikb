@@ -25,7 +25,7 @@ body {
 
 .navbar-container {
     background-color: var(--secondary-color);
-    border-radius: 1em;
+    border-radius: 3em;
     margin: 1em auto;
     width: min(75em, 100%);
     padding: 2em;
@@ -56,7 +56,7 @@ nav a {
     text-decoration: none;
     color: var(--text-color);
     padding: 1em;
-    border-radius: 0.5em;
+    border-radius: 2em;
     border: 1px solid transparent;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -83,7 +83,7 @@ nav a:hover {
 
 .qual-card, .project-card, .service-card {
     background: var(--secondary-color);
-    border-radius: 1em;
+    border-radius: 2em;
     padding: 1.5em;
     border: 1px solid var(--secondary-color);
     transition: all 0.3s ease;
@@ -101,8 +101,6 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    border-radius: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -110,7 +108,7 @@ nav a:hover {
     max-height: 60px;
     max-width: 100%;
     object-fit: contain;
-    border-radius: 0.5em;
+    border-radius: 1.5em;
 }
 
 .card-header {
@@ -123,7 +121,7 @@ nav a:hover {
 .card-logo {
     max-height: 80px;
     object-fit: contain;
-    border-radius: 0.5em;
+    border-radius: 2em;
 }
 
 
@@ -174,7 +172,7 @@ header {
     width: min(75em, 100%);
     background-color: var(--secondary-color);
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 3em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -184,7 +182,7 @@ section {
     width: min(75em, 100%);
     background-color: var(--secondary-color);
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 3em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -211,7 +209,7 @@ section {
     width: min(75em, 100%);
     background-color: var(--secondary-color);
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 3em;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -235,7 +233,7 @@ section {
     gap: 1em;
     padding: 1em;
     background-color: var(--base-color);
-    border-radius: 0.5em;
+    border-radius: 2em;
     border: 1px solid var(--primary-color);
     transition: all 0.3s ease;
 }
@@ -332,7 +330,7 @@ h1 {
     text-decoration: none;
     color: white;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 2em;
     border: 1px solid var(--secondary-color);
     transition: all 0.3s ease;
     position: relative;
@@ -345,7 +343,6 @@ h1 {
 
 .project-card .index-btns {
     margin-top: 1.5em;
-    background-color: var(--primary-color);
 }
 
 #education-btn {
@@ -391,7 +388,7 @@ h1 {
     padding: 0.5em 1em;
     background-color: var(--base-color);
     border: 1px solid var(--primary-color);
-    border-radius: 0.5em;
+    border-radius: 2em;
     transition: all 0.3s ease;
     cursor: pointer;
 }
